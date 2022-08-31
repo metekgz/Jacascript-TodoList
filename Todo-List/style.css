@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to right, #8EC5FC , #E0C3FC);
+}
+
+header h1{
+    color: seashell;
+    margin: 4rem 0;
+    font-size: 3rem;
+}
+
+header,form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    position: relative;
+}
+
+form.search{
+    display: flex;
+}
+
+form input,form button{
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+}
+
+form button{
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgb(248, 244, 242);
+}
+
+.select{
+    position: relative;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+select{
+    border: none;
+    appearance: none;
+    outline: none;
+    width: 10rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+
+}
+
+.select:after{
+    position: absolute;
+    background-color: seashell;
+    color: black;
+    content: "\25BC";
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    /* pointer-events: ; */
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo li {
+    height: 100%;
+    padding: 0 0.4rem;
+}
+
+.todo-list{
+    min-width: 40%;
+    list-style:  none;
+}
+
+.todo{
+    margin: 0.4rem;
+    color: seashell;
+    box-shadow: black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.add-btn , .delete-btn{
+    background-color: seashell;
+    color: white;
+    border: none;
+    padding: 0.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+}
+
+.add-btn{
+    background-color: #ba81f0
+}
+
+.delete-btn{
+    background-color: #ba81f0
+}
+
+/* Alert kısmı */
+
+.alert{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+}
+
+.alert-success, .alert-warning{
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    width: 25rem;
+    text-align: center;
+    display: none;
+}
+
+.alert-success{
+    background-color: #ba81f0;
+    border-radius: 0.4rem;
+}
+
+.alert-warning{
+    background-color: #ba81f0;
+    border-radius: 0.4rem;
+}
+
+
+/* eklenen listedeki elemanları silme */
+.fa-check,.fa-minus{
+    pointer-events: none;
+}
+
+
+/* eklenen itemlerin complete işlemi */
+
+.completed{
+    opacity: 0.5;
+    text-decoration: none;
+}

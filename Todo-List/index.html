@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- TODO LIST head kısmı -->
+    <header>
+      <h1>TODO LIST</h1>
+    </header>
+
+    <!-- todo list ekleme kısmı  -->
+
+    <form>
+      <div class="search">
+        <input type="text" class="search-input" placeholder="Yeni Task" />
+        <button class="search-button" type="button">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <div class="select">
+        <select name="todos" class="select-todo">
+          <option value="list">Liste</option>
+          <option value="completed">Tamamlandı</option>
+          <option value="uncompleted">Tamamlanmadı</option>
+        </select>
+      </div>
+    </form>
+    <!-- eklenen todolar kısmı -->
+
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+
+    <!-- alert box -->
+
+    <div class="alert">
+      <div class="alert-success">
+        <div>Ekleme Başarılı</div>
+      </div>
+      <div class="alert-warning">
+        <div>Input boş bırakılamaz</div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
